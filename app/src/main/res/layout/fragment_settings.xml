@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SettingsFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/pacifico_regular"
+            android:text="@string/local_for_vocal"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/rel">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="45dp">
+
+           <ImageView
+               android:id="@+id/img1"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:padding="13dp"
+               android:src="@drawable/language"
+               />
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:fontFamily="@font/os_semibold"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               android:layout_toRightOf="@id/img1"
+               android:text="Change Language"/>
+
+       </RelativeLayout>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:fontFamily="@font/os_regular"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:paddingStart="15dp"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hindi"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/os_regular"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:paddingStart="15dp"/>
+
+
+        </RadioGroup>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/term"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/term"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/img4"
+                android:text="Term &amp; Condition"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/privacy"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/img5"
+                android:text="Privacy Policy"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/refund"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/refund"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/img7"
+                android:text="Refund Policy"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/contact"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/img8"
+                android:text="Contact us"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/about"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/img6"
+                android:text="About us"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/suggest"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/suggestions"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/img3"
+                android:text="Suggestion"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="13dp"
+                android:src="@drawable/logout"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/img2"
+                android:text="Logout"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
